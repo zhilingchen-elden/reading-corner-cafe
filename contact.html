@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Reading Corner Café :: Contact</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="images/favicon.png">
+</head>
+<body>
+  <div id="wrapper">
+    <header>
+      <a href="index.html">
+        <img src="images/logo.png" alt="The Reading Corner Café logo" class="logo">
+      </a>
+      <h1>The Reading Corner Café</h1>
+    </header>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="menu.html">Menu & Drinks</a></li>
+        <li><a href="books.html">Books</a></li>
+        <li><a href="events.html">Events</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+    
+    <main>
+      <h2>Contact Us</h2>
+      <p>Required fields are marked with an asterisk *.</p>
+      <form method="post" action="thankyou.html">
+        <label for="myName">*Name:</label>
+        <input type="text" id="myName" name="myName" required>
+
+        <label for="myEmail">*E-mail:</label>
+        <input type="email" id="myEmail" name="myEmail" required>
+
+        <label for="myPhone">Phone:</label>
+        <input type="tel" id="myPhone" name="myPhone" maxlength="12">
+
+        <label for="myReason">Reason for Contact:</label>
+        <select id="myReason" name="myReason">
+          <option value="general">General Question</option>
+          <option value="event">Event Reservation</option>
+          <option value="menu">Menu Question</option>
+          <option value="book">Book Recommendation</option>
+        </select>
+        <label for="myComments">*Comments:</label>
+        <textarea id="myComments" name="myComments" rows="5" maxlength="1200" required></textarea>
+        <input type="submit" value="Submit">
+      </form>
+    </main>
+    <footer>
+      <p>&copy; 2026 The Reading Corner Café</p>
+      <p>123 Book Street, New York, NY</p>
+    </footer>
+  </div>
+</body>
+</html>
